@@ -1,0 +1,835 @@
+/* ---------------------------
+Name: Valentines
+File : Valentine Html-Template
+-----------------------------
+Author: ThemeAki
+Data:   17/03/2021
+Version: 1.0 
+---------------------------- */
+
+/* ----------------
+Table of content
+----------------
+1.Navbar Part
+2.Banner Part
+3.History  Part
+4.Gift and Proposal Part 
+5.Ticket Part
+6.Offer & Service Part Part
+7.Gallery Part 
+8.Counter Part
+9.Testimonial Part
+10.Newsletter Part
+11.Footer Part
+12.
+13. 
+*/
+
+/* =====================================
+    Common css part goes here 
+===================================== */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul,
+ol {
+    list-style-type: none;
+}
+
+a,
+a:focus,
+a:hover {
+    text-decoration: none;
+    outline: 0;
+}
+
+img {
+    overflow: hidden;
+    border: 0;
+    vertical-align: middle;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: relative;
+	overflow-x: hidden;
+}
+
+.preloader{
+	position: fixed;
+	z-index: 999999;
+	background-color: #fff;
+	width: 100%;
+	height: 100%;
+	
+}
+.preloader img{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+/* =====================================
+    Navbar css part goes here 
+===================================== */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 22px;
+    z-index: 9;
+}
+.navbar-light .navbar-nav .nav-link {
+	font-size: 16px;
+	color: #000;
+	font-family: 'Josefin Sans', sans-serif;
+	padding: 0 20px;
+	transition: all linear .3s;
+	position: relative;
+}
+.navbar-right .btn {
+	padding: 8px 20px;
+	font-size: 20px;
+	border-radius: 25px;
+	font-family: 'Josefin Sans', sans-serif;
+    color: #d50a51;
+	background-color: transparent;
+	border-color: #d50a51;
+	cursor: pointer;
+	position: relative;
+	transition: all linear .3s;
+	z-index: 1;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+	color: #d50a51;
+}
+.navbar-right .btn:hover {
+	background: #d50a51;
+	color: #fff;
+}
+.navbar-light .navbar-nav .nav-link::after,
+.navbar-light .navbar-nav .nav-link.active::after {
+	position: absolute;
+	content: '';
+	bottom: -35px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../images/logo-hoaver.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0;
+	transition: all linear .3s;
+}
+.navbar-light .navbar-nav .nav-link:hover::after,
+.navbar-light .navbar-nav .nav-link.active::after {
+	color: #d50a51;
+	opacity: 1;
+	bottom: -25px;
+}
+.fixed-top{
+	background:  #fffae2;
+	position: fixed;
+	top: 0px;
+	left: 0;
+	animation: aho 2s ;
+	-webkit-animation: aho 2s ;
+	padding-top: 15px;
+	padding-bottom: 18px;
+}
+@keyframes aho{
+	from{top:-100px};
+	to{top:0px};
+}
+
+/* =====================================
+    Banner css part goes here 
+===================================== */
+#banner {
+	background: url(../images/banner.jpg);
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	top: 0;
+}
+.banner-img {
+	padding-top: 135px;
+}
+.banner-content {
+	padding-top: 220px;
+	padding-bottom: 125px;
+}
+.banner-content h2 {
+	color: #8a5e3b;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 60px;
+	text-transform: uppercase;
+	margin-bottom: -28px;
+}
+.banner-content h1 {
+	font-family: 'Great Vibes', cursive;
+	font-size: 80px;
+	color: #d50a51;
+	text-transform: capitalize;
+	padding-bottom: 15px;
+}
+.banner-content p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: #444;
+	line-height: 26px;
+	padding-bottom: 45px;
+}
+.banner-content a {
+	border: 1px solid #d50a51;
+	padding: 10px 25px;
+	border-radius: 25px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 20px;
+	color: #d50a51;
+	text-decoration: none;
+	transition: all linear .3s;
+}
+.banner-content a:hover {
+	background: #d50a51;
+	color: #fff;
+}
+/* =====================================
+    History  css part goes here 
+===================================== */
+#history {
+	padding-top: 100px;
+}
+.heading {
+	padding-top: 20px;
+	padding-left: 50px;
+	position: relative;
+}
+.heading::after {
+	position: absolute;
+	content: '';
+	width: 86px;
+	height: 78px;
+	top: 0;
+	left: -5px;
+	background: url(../images/love-bg.png);
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+.heading h3 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 24px;
+	color: #444;
+	font-weight: 700;
+	margin: 0;
+	text-transform: capitalize;
+}
+.heading h2 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 32px;
+	color: #d50a51;
+	font-weight: 700;
+	padding-bottom: 30px;
+	text-transform: capitalize;
+}
+.history-details p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: #444;
+	line-height: 26px;
+    margin-bottom: 16px;
+}
+/* =====================================
+    Gift and Proposal css part goes here 
+===================================== */
+#proposal {
+	background: #fff6da;
+	margin-top: 95px;
+	position: relative;
+}
+.proposal-content {
+	padding-top: 50px;
+}
+.heading2 {
+	padding-top: 20px;
+	padding-left: 50px;
+	position: relative;
+}
+.heading2::after {
+	position: absolute;
+	content: '';
+	width: 86px;
+	height: 78px;
+	top: 0;
+	left: -5px;
+	background: url(../images/love-bg.png);
+	background-repeat: no-repeat;
+}
+.heading2 h3 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 24px;
+	color: #444;
+	font-weight: 700;
+	margin: 0;
+	text-transform: capitalize;
+}
+.heading2 h2 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 32px;
+	color: #d50a51;
+	font-weight: 700;
+	padding-bottom: 30px;
+	text-transform: capitalize;
+}
+.proposal-details p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: #444;
+	line-height: 26px;
+    margin-bottom: 16px;
+}
+.button {
+	padding-top: 20px;
+	padding-bottom: 60px;
+}
+.button a {
+	border: 1px solid #d50a51;
+	padding: 10px 25px;
+	border-radius: 25px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 20px;
+	color: #d50a51;
+	text-decoration: none;
+	transition: all linear .3s;
+	margin-right: 20px;
+	text-transform: capitalize;
+}
+.button a:hover {
+	background: #d50a51;
+	color: #fff;
+}
+.poposal-content{
+	position: relative;
+}
+.gift-img img {
+	position: absolute;
+	top: -110px;
+	right: 0;
+	height: 650px;
+	width: 520px;
+}
+/* =====================================
+    Ticket Part css goes here 
+===================================== */
+#ticket {
+	padding-top: 100px;
+}
+.heading3 {
+	padding-top: 20px;
+	padding-right: 50px;
+	position: relative;
+	text-align: right;
+}
+.heading3::after {
+	position: absolute;
+	content: '';
+	width: 86px;
+	height: 78px;
+	top: 0;
+	right: 0;
+	background: url(../images/love-bg1.png);
+	background-repeat: no-repeat;
+}
+.heading3 h3 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 24px;
+	color: #444;
+	font-weight: 700;
+	margin: 0;
+	text-transform: capitalize;
+}
+.heading3 h2 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 32px;
+	color: #d50a51;
+	font-weight: 700;
+	padding-bottom: 30px;
+	text-transform: capitalize;
+}
+.ticket-details p {
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	color: #444;
+	line-height: 26px;
+	margin-bottom: 16px;
+}
+/* =====================================
+    Offer & Service Part goes here 
+===================================== */
+#offer {
+	margin-top: 100px;
+	background: #fef7fa;
+	padding-top: 55px;
+}
+.heading4 {
+	padding-top: 20px;
+	padding-left: 50px;
+	position: relative;
+}
+.heading4 h3 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 24px;
+	color: #444;
+	font-weight: 700;
+	margin: 0;
+	text-transform: capitalize;
+}
+.heading4 h2 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 32px;
+	color: #d50a51;
+	font-weight: 700;
+	padding-bottom: 30px;
+	text-transform: capitalize;
+}
+.heading4::after {
+	position: absolute;
+	content: '';
+	width: 86px;
+	height: 78px;
+	top: 0;
+	left: -5px;
+	background: url(../images/love-bg.png);
+	background-repeat: no-repeat;
+}
+.offer-details p {
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	color: #444;
+	line-height: 26px;
+	margin-bottom: 16px;
+}
+.service-main {
+	margin-bottom: 30px;
+}
+.service-item {
+	padding: 0px 25px;
+	border-right: 3px solid transparent;
+	transition: all linear .3s;
+}
+.service-item:hover {
+	background: #f1f1f1;
+	border-color: #d50a51;
+	-webkit-box-shadow: 0px 0px 6px 1px rgb(183, 177, 183);
+	-moz-box-shadow: 0px 0px 6px 1px rgba(183,177,183,1);
+	box-shadow: 0px 0px 6px 1px rgba(183,177,183,1);
+}
+.service-name {
+	padding-top: 20px;
+}
+.service-name span {
+	vertical-align: -20px;
+	font-size: 20px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+	padding-top: 5px;
+	margin-left: 20px;
+	color: #d50a51;
+	text-transform: capitalize;
+}
+.service-details {
+	padding-bottom: 25px;
+}
+.service-details p {
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	color: #444;
+	line-height: 24px;
+	padding-top: 20px;
+}
+/* =====================================
+    Gallery Part css goes here 
+===================================== */
+#gallery {
+	padding-top: 100px;
+}
+.gallery-img {
+	position: relative;
+	margin-bottom: 30px;
+}
+.gallery-img img {
+	width: 100%;
+}
+.gallery-img .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	opacity: 0;
+	transition: all linear .3s;
+	transform: scale(0);
+}
+.gallery-img:hover .overlay {
+	opacity: 1;
+	transform: scale(1);
+}
+.social {
+	position: absolute;
+	right: 0;
+}
+.social i {
+	display: block;
+	margin-right: 20px;
+	margin-top: 20px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	transition: all linear .3s;
+}
+.social-engagment {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+}
+.social-engagment h3 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 20px;
+	color: #fff;
+	font-weight: 700;
+}
+.social-engagment p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	color: #fff;
+	text-align: center;
+}
+.social-engagment i {
+	margin-left: 12px;
+	margin-right: 2px;
+}
+.button3 a {
+	margin-right: 0;
+	padding: 10px 20px;
+	margin-left: 10px;
+}
+.images-item {
+	display: none;
+}
+/* =====================================
+    Counter Part css goes here 
+===================================== */
+#counter {
+	background: url(../images/counter-bg.jpg);
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 300px;
+	margin-top: 40px;
+}
+#countdown h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #d50a51;
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+#countdown h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: capitalize;
+    font-size: 32px;
+    color: #444;
+}
+#days,
+#minutes {
+    margin-top: 20px;
+}
+#hours, 
+#seconds {
+    margin-top: 40px;
+}
+/* =====================================
+    Testimonial Part css goes here 
+===================================== */
+#testimonial {
+	padding-top: 100px;
+	position: relative;
+}
+#testimonial i {
+	width: 40px;
+	height: 40px;
+	border: 1px solid #d50a51;
+	border-radius: 50%;
+	color: #d50a51;
+	text-align: center;
+	line-height: 40px;
+}
+#testimonial .left {
+	position: absolute;
+	left: 50px;
+	top: 60%;
+}
+#testimonial .right {
+	position: absolute;
+	right: 50px;
+	top: 60%;
+}
+#testimonial i:hover {
+	background: #d50a51;
+	color: #fff;
+}
+.team-slider{
+	position: relative;
+}
+.team-slider::before {
+	position: absolute;
+	content: '';
+	height: 70px;
+	width: 70px;
+	bottom: -25px;
+	right: -24px;
+	transform: rotate(180deg);
+	background: url(../images/feed-love.png);
+	background-repeat: no-repeat;
+}
+.team-slider::after {
+	position: absolute;
+	content: '';
+	height: 70px;
+	width: 70px;
+	top: -40px;
+	left: -25px;
+	background: url(../images/feed-love.png);
+	background-repeat: no-repeat;
+}
+.client-feedback {
+	background: #fffae2;
+	padding-top: 40px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 20px;
+}
+.client-feedback p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: #444;
+	line-height: 26px;
+	margin-bottom: 16px;
+}
+.client-feedback ul li {
+	float: left;
+	padding-right: 20px;
+}
+.client-info {
+	margin-top: 30px;
+}
+.client-info h3 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 20px;
+	color: #222;
+	text-transform: capitalize;
+}
+.client-info h4 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	color: #444;
+	text-transform: capitalize;
+}
+/* =====================================
+    Newsletter Part css goes here 
+===================================== */
+#newsletter{
+	margin-bottom: -150px;
+	margin-top: 100px;
+}
+.newsletter-content {
+	width: 100%;
+	background: #d50a51;
+	border-radius: 65px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+.news ul li {
+	float: left;
+}
+.news ul li i {
+	font-size: 50px;
+	margin-top: 8px;
+	margin-right: 7px;
+	color: #fff;
+}
+.news ul li h2 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 40px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 0;
+}
+.news ul li p {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 15px;
+	color: #fff;
+	font-weight: 400;
+}
+.name {
+	margin-top: 15px;
+	position: relative;
+}
+.name .form-control {
+	background: transparent;
+	border-color: #fff;
+	color: #fff;
+	border-radius: 0;
+}
+.name .form-control::placeholder{
+	color: #fff;
+}
+.form-control:focus {
+	border-color: #fccddd;
+	box-shadow: none;
+	outline: none;
+}
+.name button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: transparent;
+	border-color: transparent;
+}
+.name button i {
+	color: #fff;
+	border-left: 1px solid #fff;
+	line-height: 34px;
+	width: 34px;
+}
+/* =====================================
+    Footer Part css goes here 
+===================================== */
+#footer {
+	padding-top: 100px;
+}
+.footer-content {
+	background: url(../images/footer-bg.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	padding-top: 80px;
+	padding-bottom: 30px;
+}
+.footer-logo{
+	margin-bottom: 30px;
+}
+.footer-item ul li {
+	float: left;
+}
+.footer-item ul li i {
+	width: 50px;
+	height: 50px;
+	background: #d50a51;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	font-size: 24px;
+}
+.footer-item ul li a {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	color: #444;
+	text-decoration: none;
+	margin-left: 20px;
+	line-height: 26px;
+}
+.follow {
+	padding-top: 60px;
+}
+.follow h2 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 20px;
+	text-transform: capitalize;
+	color: #d50a51;
+	font-weight: 700;
+	text-align: center;
+	padding-bottom: 30px;
+}
+.follow i {
+	width: 40px;
+	height: 40px;
+	border: 1px solid #d50a51;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+	color: #d50a51;
+	font-size: 20px;
+	margin-right: 10px;
+	transition: all linear .3s;
+}
+.follow i:hover {
+	background: #d50a51;
+	color: #fff;
+}
+.copyright {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: #fffae2;
+}
+.copyright p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: #444444;
+}
+.copyright a {
+	color: #d50a51;
+}
+/* ===== Back To Top Button css ===== -- */
+.bake-btn{
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	width: 50px;
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+	line-height: 50px;
+	background: #d50a51;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	display: none;
+	cursor: pointer;
+}
+/* =====================================
+    Common css part goes here 
+===================================== */
+/* =====================================
+    Common css part goes here 
+===================================== */
